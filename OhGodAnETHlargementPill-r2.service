@@ -1,0 +1,13 @@
+[Unit]
+Description=OhGodAnETHlargementPill-r2 service
+After=sys-bus-pci-drivers-nvidia.device
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+User=root
+ExecStart=/home/miner/.local/share/bminer-v16.3.1/OhGodAnETHlargementPill-r2
+
+[Install]
+WantedBy=multi-user.target
